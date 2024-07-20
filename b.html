@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Contact List</h1>
+        <button onclick="openAddModal()">Add Contact</button>
+        <ul id="contact-list"></ul>
+    </div>
+
+    <!-- Modal for adding/editing contact -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add/Edit Contact</h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="phone" placeholder="Phone">
+            <button onclick="saveContact()">Save</button>
+        </div>
+    </div>
+
+    <script src="a.js"></script>
+</body>
+</html>
